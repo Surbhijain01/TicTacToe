@@ -1,0 +1,109 @@
+html,
+body {
+    height: 100%;
+    background-color: #0e0b0b;
+
+}
+
+body {
+
+    background-image: url(wp2757874.gif);
+
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.board {
+    height: 50%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: auto;
+    margin-left: 20%;
+}
+
+.cell {
+
+    border-bottom: 7px solid rgba(236, 228, 228, 0.763);
+
+
+    border-right: 7px solid rgba(236, 228, 228, 0.763);
+    font-size: 55px;
+    text-align: center;
+    line-height: 95px;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+}
+
+.cell:nth-child(3n) {
+    border-right: none;
+}
+
+.cell:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.cell.highlight {
+    background-color: #f7b32c;
+}
+
+.control {
+    width: 50%;
+    margin-left: 20%;
+    margin-right: auto;
+
+
+}
+
+.button {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+
+
+    background-color: blue;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gameStatement {
+    margin-top: auto;
+    color: #ffffff;
+    text-shadow: 0 0 5px #f22727,
+        0 0 10px #0e0b0b,
+        0 0 20px #e8111145,
+        0 0 40px #ff0003,
+        0 0 80px #f00,
+        0 0 90px #ff001f,
+        0 0 100px #ff004e,
+        0 0 150px #ff0039;
+
+}
+
+.cell {
+
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 90px #0ff,
+        0 0 100px #0ff,
+        0 0 150px #0ff;
+}
